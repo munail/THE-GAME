@@ -1,0 +1,17 @@
+Body {
+    color: black;
+    font-family: cursive;
+    background-color: crimson;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+div.dice {
+    width: 30px;
+    background: yellow;
+    padding: 30px;
+    font-size: 25px;
+    margin: 30px;
+    text-align: center;
+}
