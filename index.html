@@ -2,35 +2,56 @@
 <html>
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet" type="THE-GAME/css">
-<script href="js/jquery-3.1.1.js"></script>
-<scrip src="js/script.js"></scrip>
+<link href="css/style.css" rel="stylesheet" type="text/css">
 
 <body>
 
     <head>
-        <title>DICE</title>
+        <title>THE GMAE</title>
     </head>
-
-    <h1>LUCKY DICE <img src="img/images%20(1).jpeg" width="50px" height="50px"></h1>
-    <br>
-    <br>
-    <br>
-    <h2><b>This a fair game of dice try your luck by rolling it </b><img src="img/images.jpeg" width="40px" height="40px"></h2>
-    <div class="row">
-        <div class="col-md-6">
-            <div id="dice1" class="dice">0</div>
-            <div id="dice2" class="dice">0</div>
-            <button onclick="roll dice()">PLAYER 1 </button>
-            <h3 id="status1" style="clear:left;"></h3>
-        </div>
-        <div class="col-md-6">
-            <div id="dice3" class="dice">0</div>
-            <div id="dice4" class="dice">0</div>
-            <button onclick="roll dice()"> PLAYER 2 </button>
-            <h4 id="status2" style="clear:left;"></h4>
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Pig Dice</h1>
         </div>
     </div>
+    <h1 id="welcome">This A fair game lets<br> play it <img src="img/images.jpeg" width="50px" height="50px"></h1>
+    <div class="container">
+        <div class="row" id="main">
+
+            <div class="col-md-4">
+                <h2 id="player1">Player 1</h2>
+                <h3>Score: <span id="player1score"></span></h3>
+                <h3>Wins: <span id="player1wins"></span></h3>
+                <div id="player1buttons">
+                    <button id="roll" class="btn btn-large btn-danger">roll dice</button>
+                    <button id="hold" class="btn btn-large btn-success">hold</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h2>Roll: <span id = "dice"></span></h2>
+                <span id="displaydice"></span>
+                <h3>Current score: <span id="current"></span></h3>
+            </div>
+            <div class="col-md-4">
+                <h2 id="player2">Player 2</h2>
+                <h3>Score: <span id="player2score"></span></h3>
+                <h3>Wins: <span id="player2wins"></span></h3>
+                <div id="player2buttons">
+                    <button id="roll" class="btn btn-large btn-danger">roll dice</button>
+                    <button id="hold" class="btn btn-large btn-success">hold</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="instructions">
+      <h4>Player one roll: "z"</h4>
+      <h4>Player two roll: "/"</h4>
+      <h4>Hold:            Space</h4>
+    </div> -->
+    </div>
+    <script src="js/jquery-3.1.1.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+
 </body>
 
 </html>

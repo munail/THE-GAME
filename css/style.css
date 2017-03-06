@@ -7,11 +7,8 @@ Body {
     background-attachment: fixed;
 }
 
-div.dice {
-    width: 30px;
-    background: yellow;
-    padding: 30px;
-    font-size: 25px;
-    margin: 30px;
-    text-align: center;
+.jumbotron {
+    background-image: url(../img/weeb.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
